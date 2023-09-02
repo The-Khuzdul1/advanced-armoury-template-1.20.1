@@ -2,6 +2,7 @@ package net.khuz.armourymod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.khuz.armourymod.block.ModBlocks;
 import net.khuz.armourymod.item.ModItemGroups;
 import net.khuz.armourymod.item.ModItems;
 import org.slf4j.Logger;
@@ -15,5 +16,6 @@ public class AdvancedArmoury implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
